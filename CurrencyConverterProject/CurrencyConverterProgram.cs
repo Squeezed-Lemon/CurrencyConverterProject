@@ -145,6 +145,64 @@
 
 
 
+            //Creating the condition in case the user has chosen first the yuan currency
+            if (type_initial_user_currency == yuan_input)
+            {
+
+                //Question2 (Yuan)
+                Console.WriteLine("\nWhat amount would you like to convert?");
+
+                Console.Write(yuan_symb); //yuan sign for response block2
+                decimal value_type_initial_user_currency = decimal.Parse(Console.ReadLine()); //Input response block 2
+
+
+                //Question 3 (looking for a new input)
+                Console.WriteLine("\nWhich currency would you like to convert to Yuan? \n \n --Dollar (USD)-- \n --Euro (EUR)-- \n --Real (BRL)-- \n");
+                string type_last_currency_to_convert = Console.ReadLine(); //Waiting for a input from question 3
+
+
+                //Creating a condition for when the last currency chosen is the dollar.
+                if (type_last_currency_to_convert == dollar_input)
+                {
+                    //Creating the operation
+                    decimal final_value = value_type_initial_user_currency * 0.14m;
+
+                    //Showing the result of the operation for the user
+                    Console.WriteLine("\nToday, when converting " + yuan_symb + value_type_initial_user_currency +
+                                      " to the current exchange rate value in Dollar, the result will be = " + dollar_symb + final_value);
+
+                }
+
+
+                //Creating a condition for when the last currency chosen is the euro.
+                if (type_last_currency_to_convert == euro_input)
+                {
+                    //Creating the operation
+                    decimal final_value = value_type_initial_user_currency * 0.12m;
+
+                    //Showing the result of the operation for the user
+                    Console.WriteLine("\nToday, when converting " + euro_symb + value_type_initial_user_currency +
+                                      " to the current exchange rate value in euro, the result will be = " + euro_symb + final_value);
+
+                }
+
+
+                //Creating a condition for when the last currency chosen is the real.
+                if (type_last_currency_to_convert == real_input)
+                {
+                    //Creating the operation
+                    decimal final_value = value_type_initial_user_currency * 0.75m;
+
+                    //Showing the result of the operation for the user
+                    Console.WriteLine("\nToday, when converting " + yuan_symb + value_type_initial_user_currency +
+                                      " to the current exchange rate value in Brazilian Real, the result will be = " + real_symb + final_value);
+
+                }
+
+
+            }
+
+
 
 
 
