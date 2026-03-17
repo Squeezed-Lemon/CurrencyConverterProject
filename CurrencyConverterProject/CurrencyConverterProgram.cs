@@ -55,6 +55,19 @@
                 }
 
 
+                //Creating a condition for when the last currency chosen is the Yuan.
+                if (type_last_currency_to_convert == yuan_input)
+                {
+                    //Creating the operation
+                    decimal final_value = value_type_initial_user_currency * 6.96m;
+
+                    //Showing the result of the operation for the user
+                    Console.WriteLine("\nToday, when converting " + dollar_symb + value_type_initial_user_currency +
+                                      " to the current exchange rate value in Yuan, the result will be = " + yuan_symb + final_value);
+
+                }
+
+
 
 
 
@@ -79,3 +92,6 @@
         }
     }
 }
+
+
+//Solving the problem with the symbols
