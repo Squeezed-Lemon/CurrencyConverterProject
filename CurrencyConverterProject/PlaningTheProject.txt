@@ -21,3 +21,8 @@ Response block 4 = {$/€/R$/¥}: (value)
 
 Today, when converting {$/€/R$/¥} (response block 1) to the current exchange rate value in (response block 3), the result will be = (final calculated value)
 Today, when converting $50 at the current exchange rate into euros (0.87), the result will be = €43.50
+
+
+Details:
+Prevent the user from entering anything other than what is being requested, and return a message (“enter a valid value”) or (“enter a valid currency”).
+Ensure that the responses are valid whether the user uses uppercase or lowercase letters.
