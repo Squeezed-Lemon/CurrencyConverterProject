@@ -41,7 +41,7 @@
                 Console.WriteLine("\nWhich currency would you like to convert to Dollar? \n \n --Euro (EUR)-- \n --Yuan (CNY)-- \n --Real (BRL)-- \n");
                 string type_last_currency_to_convert = Console.ReadLine(); //Waiting for a input from question 3
 
-
+                
 
 
 

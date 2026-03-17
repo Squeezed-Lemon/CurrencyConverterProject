@@ -16,9 +16,6 @@ Response block 2 = {$/€/R$/¥}: (value)
 Question 3 = Which currency would you like to convert to (from the currency selected in question 1)? (dollar/euro/yuan/real)
 Response block 3 =
 
-Question 4 = What amount of (currency selected in question 3) would you like to convert to complete the operation?
-Response block 4 = {$/€/R$/¥}: (value)
-
 Today, when converting {$/€/R$/¥} (response block 1) to the current exchange rate value in (response block 3), the result will be = (final calculated value)
 Today, when converting $50 at the current exchange rate into euros (0.87), the result will be = €43.50
 
