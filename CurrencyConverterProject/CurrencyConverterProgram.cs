@@ -29,11 +29,24 @@
             //Criando a condicao para caso o usuario tenha escolhido a moeda dolar
             if (type_initial_user_currency == dollar_input) 
             {
-                //Question2 Dollar
+                
+                //Question2 (Dollar)
                 Console.WriteLine("\nWhat amount would you like to convert?");
 
                 Console.Write(dollar_symb); //Dolar sign for response block2
                 decimal value_type_initial_user_currency = decimal.Parse(Console.ReadLine()); //Input response block 2
+
+                
+                //Question 3 (looking for a new input)
+                Console.WriteLine("\nWhich currency would you like to convert to Dollar? \n \n --Euro (EUR)-- \n --Yuan (CNY)-- \n --Real (BRL)-- \n");
+                string type_last_currency_to_convert = Console.ReadLine(); //Waiting for a input from question 3
+
+
+
+
+
+
+
 
 
 
