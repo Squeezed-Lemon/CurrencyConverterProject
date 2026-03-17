@@ -41,7 +41,18 @@
                 Console.WriteLine("\nWhich currency would you like to convert to Dollar? \n \n --Euro (EUR)-- \n --Yuan (CNY)-- \n --Real (BRL)-- \n");
                 string type_last_currency_to_convert = Console.ReadLine(); //Waiting for a input from question 3
 
+
+                //Creating a condition for when the last currency chosen is the euro.
+                if (type_last_currency_to_convert == euro_input) 
+                {
+                    //Creating the operation
+                    decimal final_value = value_type_initial_user_currency * 0.87m;
+                    
+                    //Showing the result of the operation for the user
+                    Console.WriteLine("\nToday, when converting " + dollar_symb + value_type_initial_user_currency + 
+                                      " to the current exchange rate value in Euro, the result will be = " + euro_symb + final_value);
                 
+                }
 
 
 
