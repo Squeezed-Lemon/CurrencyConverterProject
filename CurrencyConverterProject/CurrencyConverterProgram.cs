@@ -1,9 +1,14 @@
-﻿namespace CurrencyConverter 
+﻿using System.Text;
+
+namespace CurrencyConverter 
 {
     public class Program
     {
         public static void Main()
         {
+            //Using program UTF8 because im dumb and i forgot to at the beginning of my project.
+            Console.OutputEncoding = Encoding.UTF8;
+
             //Creating a variable for each currency.
             string dollar_input, euro_input, yuan_input, real_input;
 
@@ -273,7 +278,3 @@
             }
     }
 }
-
-
-//solve the problem with the euro symbol
-//criar condicao caso o usuario escolha euro, real ou yuan como primeiro input currency
